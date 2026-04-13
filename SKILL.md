@@ -1,9 +1,9 @@
 ---
-name: better-skill
+name: darwin-skill
 description: Autonomous skill optimizer inspired by Karpathy's autoresearch. Evaluates SKILL.md files using an 8-dimension rubric (structure + effectiveness), runs hill-climbing with git version control, and validates improvements through test prompts. Use when user mentions "优化skill", "skill评分", "自动优化", "auto optimize skills", "skill质量检查", "这个skill写得不好", "帮我改改skill", "skill怎么样", "提升skill质量", "skill review", "skill打分".
 ---
 
-# better.skill
+# 达尔文.skill
 
 > 借鉴 Karpathy autoresearch 的自主实验循环，对 skills 进行持续优化。
 > 核心理念：**评估 → 改进 → 实测验证 → 人类确认 → 保留或回滚**
