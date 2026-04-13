@@ -1,13 +1,12 @@
+![Auto Skill Optimizer](assets/banner.svg)
+
 # Auto Skill Optimizer
 
 **像训练模型一样优化你的 Claude Code Skills。**
 
-受 [Andrej Karpathy 的 autoresearch](https://github.com/karpathy/autoresearch) 启发，将自主实验循环从模型训练搬到 Skill 优化领域。
+受 [Andrej Karpathy 的 autoresearch](https://github.com/karpathy/autoresearch) 启发，将自主实验循环从模型训练搬到 Skill 优化领域。一个只能向前转的棘轮。
 
-![Hero](assets/aso-hero.png)
-
-> 「autoresearch 的核心想法很简单：让系统自主运行实验，评估结果，只保留有效的改进。一个只能向前转的棘轮。」
-> — Andrej Karpathy
+> [**查看可视化展示页 →**](https://alchaincyf.github.io/auto-skill-optimizer/)
 
 ---
 
