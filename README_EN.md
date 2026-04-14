@@ -10,12 +10,12 @@ English | **[中文](README.md)**
 
 # darwin.skill
 
-**Optimize your Claude Code Skills the way you train models.**
+**Optimize your Agent Skills the way you train models.**
 
 Inspired by [Karpathy's autoresearch](https://github.com/karpathy/autoresearch). Autonomous experiment loops, applied to skill optimization. A ratchet that only turns forward.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/code)
+[![Agent Skill](https://img.shields.io/badge/Agent%20Skill-Compatible-blueviolet)](https://skills.sh)
 [![Skills](https://img.shields.io/badge/skills.sh-Compatible-green)](https://skills.sh)
 
 ```
@@ -36,7 +36,7 @@ Evaluate → Improve → Test → Human Confirm → Keep or Revert. Repeat.
 
 ## Why This Exists
 
-When you have 10 skills, you can maintain them by hand. When you have 60+, you need a system.
+Agent skill ecosystems are expanding fast. Claude Code, Codex, OpenClaw, Trae, CodeBuddy and more all support the SKILL.md format. When you have 10 skills, you can maintain them by hand. When you have 60+, you need a system.
 
 Traditional skill review is purely structural: does the frontmatter look right? Are the steps numbered? Do the file paths exist? But a perfectly formatted skill can still produce terrible output.
 
@@ -116,7 +116,7 @@ Round 2 scored 75, below the current best of 78. Auto-reverted. Effective baseli
 npx skills add alchaincyf/darwin-skill
 ```
 
-After installation, tell Claude Code: "optimize all skills" or "optimize [skill-name]".
+After installation, tell your agent: "optimize all skills" or "optimize [skill-name]". Works with any tool that supports the SKILL.md format.
 
 Can't access GitHub? Download the zip: [darwin-skill.zip](https://pub-161ae4b5ed0644c4a43b5c6412287e03.r2.dev/skills/darwin-skill.zip). Extract and place SKILL.md in `~/.claude/skills/darwin-skill/`.
 
