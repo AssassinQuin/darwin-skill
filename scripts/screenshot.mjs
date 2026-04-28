@@ -14,8 +14,17 @@
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
-// 使用全局安装的 playwright-core
-const pw = require('/Users/alchain/.npm-global/lib/node_modules/playwright/node_modules/playwright-core');
+// 使用全局安装的 playwright-core（动态查找）
+let pw;
+try {
+  // 优先尝试直接 require
+  pw = require('playwright-core');
+} catch {
+  // 回退到 npm 全局路径
+  const { execSync } = require('child_process');
+  const globalPath = execSync('npm root -g', { encoding: 'utf-8' }).trim();
+  pw = require(require('path').join(globalPath, 'playwright-core'));
+}
 
 const htmlPath = process.argv[2] || new URL('../templates/result-card.html', import.meta.url).pathname;
 const outputPath = process.argv[3] || new URL('../templates/result-card.png', import.meta.url).pathname;
